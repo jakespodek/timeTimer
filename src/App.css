@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.digital {
+    font-family: "Press Start 2P", system-ui;
+}
+
+.timeDisplay {
+    margin: 0;
+    font-size: 6rem;
+    width: 500px;
+    text-align: center;
+}
+
+.buttonsContainer {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10vh 0;
+}
+
+button {
+    padding: 20px;
+    width: 100px;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+button:hover:enabled {
+    background-color: red;
+    cursor: pointer;
+}
+
+.lapTimesContainer {
+    text-transform: uppercase;
+    width: 500px;
+    height: 35vh;
+    font-size: 2.6rem;
+    text-align: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.lapTimesContainer ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.lapTimesContainer li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 40%;
+    }
+    .buttonsContainer {
+        flex-wrap: wrap;
+        width: 250px;
+    }
+    button {
+        margin-bottom: 30px;
+    }
+    .lapTimesContainer {
+        width: 300px;
+    }
+}
